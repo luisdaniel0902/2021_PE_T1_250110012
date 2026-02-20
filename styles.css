@@ -1,23 +1,4 @@
-.datos {
-    margin-top: 15px;
-    margin-bottom: 25px;
-    padding: 15px;
-    background-color: #f8f9fb;
-    border-left: 4px solid #1f2d3d;
-    line-height: 1.8;
-    text-align: justify;
-    border-radius: 6px;
-    font-size: 15px;
-}
-
-p {
-    margin-bottom: 15px;
-}
-
-h1, h2, h3 {
-    margin-top: 20px;
-    margin-bottom: 15px;
-}/* ===== RESET BÁSICO ===== */
+/* ===== RESET ===== */
 * {
     margin: 0;
     padding: 0;
@@ -26,68 +7,63 @@ h1, h2, h3 {
 
 /* ===== ESTILO GENERAL ===== */
 body {
-    font-family: 'Segoe UI', Tahoma, sans-serif;
-    background: linear-gradient(135deg, #1e3c72, #2a5298);
-    color: #333;
-    line-height: 1.6;
-    padding: 30px 10px;
+    font-family: "Times New Roman", Georgia, serif;
+    background-color: #f4f4f4;
+    color: #222;
+    line-height: 1.7;
+    padding: 40px 15px;
 }
 
-/* ===== CONTENEDORES ===== */
+/* ===== CONTENEDOR PRINCIPAL ===== */
 .contenedor {
-    background: #ffffff;
-    max-width: 1100px;
-    margin: 40px auto;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-    transition: transform 0.3s ease;
+    background-color: #ffffff;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 40px;
+    border: 1px solid #dcdcdc;
 }
 
-.contenedor:hover {
-    transform: translateY(-5px);
-}
-
-/* ===== TITULOS ===== */
+/* ===== TÍTULOS ===== */
 h1 {
-    color: #1e3c72;
+    font-size: 26px;
     margin-bottom: 15px;
-    border-bottom: 3px solid #2a5298;
-    padding-bottom: 5px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #000;
+    font-weight: normal;
 }
 
 h2 {
-    margin-top: 25px;
-    color: #2a5298;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: bold;
 }
 
 h3 {
+    font-size: 18px;
     margin-bottom: 10px;
-    color: #1e3c72;
 }
 
 /* ===== PÁRRAFOS ===== */
 p {
-    margin: 10px 0;
+    margin-bottom: 15px;
+    text-align: justify;
 }
 
 .datos {
-    background: #f4f6fa;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
     padding: 15px;
-    border-radius: 8px;
     font-size: 14px;
-    max-height: 120px;
+    max-height: 130px;
     overflow-y: auto;
-    border-left: 5px solid #2a5298;
 }
 
-/* ===== RESUMEN ===== */
+/* ===== RESUMEN ESTADÍSTICO ===== */
 .resumen {
-    background: #e8f0ff;
+    border: 1px solid #000;
     padding: 15px;
     margin: 20px 0;
-    border-radius: 8px;
-    border-left: 6px solid #1e3c72;
 }
 
 .resumen ul {
@@ -95,83 +71,55 @@ p {
 }
 
 .resumen li {
-    margin: 5px 0;
+    margin-bottom: 6px;
 }
 
 /* ===== TABLAS ===== */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px 0;
+    margin-top: 20px;
     font-size: 14px;
-    text-align: center;
 }
 
 thead {
-    background-color: #1e3c72;
-    color: white;
+    background-color: #000;
+    color: #fff;
 }
 
 th, td {
-    padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: center;
 }
 
-tbody tr:nth-child(even) {
-    background-color: #f2f2f2;
+tbody tr {
+    background-color: #fff;
 }
 
 tbody tr:hover {
-    background-color: #dbe6ff;
-    transition: 0.3s;
+    background-color: #f0f0f0;
 }
 
 /* ===== IMÁGENES ===== */
 .imagenes {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-    margin-top: 20px;
+    margin-top: 25px;
+    text-align: center;
 }
 
 .imagenes img {
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    transition: transform 0.3s ease;
-}
-
-.imagenes img:hover {
-    transform: scale(1.05);
+    margin: 10px;
+    border: 1px solid #000;
+    padding: 5px;
 }
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
     .contenedor {
-        padding: 20px;
+        padding: 25px;
     }
 
     table {
         font-size: 12px;
     }
-
-    .datos {
-        font-size: 12px;
-    }
-
-    .imagenes img {
-        width: 100%;
-        height: auto;
-    }
 }
-
-.resumen {
-    margin-top: 20px;
-    margin-bottom: 25px;
-}
-
-.resumen ul {
-    padding-left: 20px;
-    line-height: 1.8;
-}
-
